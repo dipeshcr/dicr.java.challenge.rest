@@ -30,7 +30,7 @@ public class ArithmeticRestImpl implements IArithmeticRest {
 
 		requestServiceImpl.requestSum(requestUUID, arithmeticRequest);
 
-		return new ResponseEntity<Object>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
+		return new ResponseEntity<>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
 
 	}
 
@@ -44,7 +44,7 @@ public class ArithmeticRestImpl implements IArithmeticRest {
 		
 		requestServiceImpl.requestSubtraction(requestUUID,arithmeticRequest);
 
-		return new ResponseEntity<Object>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
+		return new ResponseEntity<>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class ArithmeticRestImpl implements IArithmeticRest {
 
 		requestServiceImpl.requestDivision(requestUUID,arithmeticRequest);
 
-		return new ResponseEntity<Object>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
+		return new ResponseEntity<>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
 	}
 
 	@Override
@@ -68,7 +68,7 @@ public class ArithmeticRestImpl implements IArithmeticRest {
 
 		requestServiceImpl.requestMultiplication(requestUUID,arithmeticRequest);
 
-		return new ResponseEntity<Object>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
+		return new ResponseEntity<>(arithmeticRequest, headers, HttpStatus.ACCEPTED);
 	}
 	
 	private HttpHeaders setHttpHeaders(String requestUUID) {

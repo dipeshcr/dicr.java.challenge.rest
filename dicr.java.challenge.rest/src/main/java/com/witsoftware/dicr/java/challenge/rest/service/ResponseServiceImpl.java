@@ -29,7 +29,7 @@ public class ResponseServiceImpl implements IResponseServiceService {
 
 		HttpHeaders headers = setHttpHeaders(arithmeticResponse.getRequestUUID());
 
-		return new ResponseEntity<Object>(arithmeticResponse.getResultDTO(), headers, HttpStatus.OK);
+		return new ResponseEntity<>(arithmeticResponse.getResultDTO(), headers, HttpStatus.OK);
 
 	}
 
